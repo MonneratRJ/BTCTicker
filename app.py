@@ -60,6 +60,7 @@ def get_currency():
 # Create the main window
 app = ttk.Tk()
 app.title('Bitcoin Price Widget')
+app.attributes('-topmost', True)  # Always on top
 
 # Variable to store BTC price
 btc_price = ttk.StringVar()
